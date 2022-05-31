@@ -20,7 +20,7 @@ namespace CustomUserRole.Controllers
 
             return View();
         }
-        [Authorize(Roles = "User")]
+        [Authorize]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
