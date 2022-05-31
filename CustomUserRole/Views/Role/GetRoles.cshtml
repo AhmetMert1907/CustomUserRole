@@ -1,0 +1,14 @@
+﻿@model IEnumerable<CustomUserRole.Models.Entities.Role>
+
+<div class="form-group">
+    <label class="control-label col-md-2" for="myRoles">Roles</label>
+    <div col-md-10>
+        <select class="form-control" id="myRoles">
+            <option selected>Choose..</option>
+            @foreach (var item in Model)
+            {
+                <option value="@item.Id">@item.RoleName</option>
+            }
+        </select>
+    </div>
+</div>
